@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    background-color: #065E7C;
+    padding: 1.2rem 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.6rem;
+}
+
+header .logo {
+    background-color: #F4FCFF;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-field label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.search-field input {
+    width: 100%;
+    background-color: #387E96;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+.search-field input::placeholder {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    font-family: "Mulish", sans-serif;
+}
+
+main .container {
+    max-width: 43rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat {
+    width: 100%;
+}
+
+.principal,
+.aside {
+    margin: 0 3rem;
+}
+
+.principal h1,
+.aside h1 {
+    margin: 3rem 0 .8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 4.0rem;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 3.1rem;
+}
+
+.botoes img {
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+    background-color: #065E7C;
+    padding: 1.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.p2 {
+    margin-top: 2.4rem;   
+}
+
+.aside h1 {
+    margin-bottom: 3.2rem;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 3.2rem;
+    gap: 1.6rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.description p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+
+footer {
+    background-color: #065E7C;
+    color: #fff;
+    width: 100%;
+    margin-top: 4.0rem;
+    padding: 1.8rem;
+    height: 6.4rem;
+    text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 100%;
+    }
+
+    header .search-field input {
+        width: 50rem;
+    }
+
+
+    main .container {
+        display: grid;
+        grid-template-areas:
+        "a a a"
+        "b b c"
+        "b b c"
+        "d d d";
+
+        grid-template-columns: 40rem 20rem 40rem;
+        margin: 5rem 0 0 40rem;
+        gap: 5rem;
+    }
+    
+    header{
+        grid-area: a;
+    }
+    
+    main section {
+        grid-area: b;
+    }
+    
+    main aside {
+        grid-area: c;
+    }
+    
+    footer {
+        grid-area: d;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
