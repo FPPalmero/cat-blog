@@ -41,7 +41,7 @@ header .logo {
 }
 
 .search-field input {
-    width: 100%;
+    width: 40vw;
     background-color: #387E96;
     padding: 1.2rem 1.6rem 1.2rem 1.4rem;
     border-radius: .5rem;
@@ -146,23 +146,25 @@ footer {
     body {
         max-width: 100%;
     }
+    
 
     header .search-field input {
-        width: 50rem;
-    }
-
-
-    main .container {
-        display: grid;
-        grid-template-areas:
-        "a a a"
-        "b b c"
-        "b b c"
-        "d d d";
-
-        grid-template-columns: 40rem 20rem 40rem;
-        margin: 5rem 0 0 40rem;
-        gap: 5rem;
+        width: 40vw;
+}
+    
+        
+        main .container {
+            display: grid;
+            grid-template-areas:
+            "a a a"
+            "b b c"
+            "b b c"
+            "d d d";
+            margin: 5rem auto;
+            justify-content: center;
+            align-items: flex-start;
+            grid-template-columns: 22vw 22vw 36vw;
+            grid-template-rows: auto;
     }
     
     header{
@@ -181,15 +183,9 @@ footer {
         grid-area: d;
     }
     
-
-
-
-
-
-
-
-
-
+    main aside {
+        margin-top: -4rem;
+    }
 
 
 
