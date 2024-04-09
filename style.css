@@ -170,7 +170,7 @@ footer {
         margin: 5rem auto;
         justify-content: center;
         align-items: flex-start;
-        grid-template-columns: 20vw 20vw 30vw;
+        grid-template-columns: 20vw 20vw 35vw;
     }
     
     header{
