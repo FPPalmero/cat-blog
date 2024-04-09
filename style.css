@@ -147,24 +147,30 @@ footer {
         max-width: 100%;
     }
     
+    header {
+        background-color: #065E7C;     
+    }
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 
     header .search-field input {
         width: 40vw;
 }
-    
-        
-        main .container {
-            display: grid;
-            grid-template-areas:
-            "a a a"
-            "b b c"
-            "b b c"
-            "d d d";
-            margin: 5rem auto;
-            justify-content: center;
-            align-items: flex-start;
-            grid-template-columns: 22vw 22vw 36vw;
-            grid-template-rows: auto;
+
+    main .container {
+        display: grid;
+        grid-template-areas:
+        "a a a"
+        "b b c"
+        "b b c"
+        "d d d";
+        margin: 5rem auto;
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-columns: 20vw 20vw 30vw;
     }
     
     header{
